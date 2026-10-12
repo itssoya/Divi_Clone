@@ -4,14 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Divi by Elegant Themes</title>
-    <!-- Importing Google api to support font for css -->
+    <!-- Google fonts (italic Playfair for the gold words, Space Grotesk for body) -->
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,800;1,800&family=Space+Grotesk:wght@400;500;700&display=swap"
     />
     <link rel="stylesheet" href="clone.css" />
   </head>
   <body>
+    <!-- PROMO BAR -->
+    <div class="promo">
+      <span
+        >🔥 Limited Time: Save 69% on Divi Pro — Includes AI, Cloud & VIP
+        Support</span
+      >
+      <a href="#pricing">Claim Your Discount →</a>
+      <button
+        class="promo-close"
+        aria-label="Close"
+        onclick="this.parentElement.remove()"
+      >
+        ✕
+      </button>
+    </div>
+
     <header class="site-header">
       <a class="logo-link" href="#">
         <div class="logo-box">D</div>
@@ -22,6 +38,7 @@
         <li><a href="#features">Features</a></li>
         <li><a href="#showcase">Showcase</a></li>
         <li><a href="#marketplace">Marketplace</a></li>
+        <li><a href="#pricing">Pricing</a></li>
         <li><a href="#reviews">Reviews</a></li>
         <li><a href="#faq">FAQ</a></li>
       </ul>
@@ -37,19 +54,22 @@
     <!-- HERO -->
     <section class="hero">
       <div class="hero-text">
-        <div class="pill"><span>⚡</span>Divi 5 - Now Available</div>
+        <div class="pill"><span>⚡</span>Divi 5 — Now Available</div>
         <h1>Build WordPress Sites <em>Without Limits.</em></h1>
         <p>
           Divi is the world's most popular WordPress theme and visual page
-          builder, used by 974,872+ designers, developers, and business owners
-          worldwide. No code. No limits.
+          builder — used by 974,872+ designers, developers, and business owners
+          worldwide. No code. No limits. Just pure creative freedom.
         </p>
         <div class="hero-buttons">
-          <a class="btn btn-gold" href="#trial"
-            >Start Your 30-Day Free Trial ✦</a
-          >
+          <a class="btn btn-gold" href="#trial">Start Free 30-Day Trial ✦</a>
           <a class="btn btn-outline" href="#features">Explore Features ↓</a>
         </div>
+        <ul class="hero-trust">
+          <li><span>★★★★★</span> 4.9/5 Rating</li>
+          <li>🛡️ 30-Day Money Back</li>
+          <li>♾️ Unlimited Sites</li>
+        </ul>
       </div>
 
       <div class="image-wrap">
@@ -70,21 +90,23 @@
 
     <div class="ticker">
       <div class="ticker-inner">
-        <span>🛟 Premium Support 24/7</span>
-        <span>🛍️ Divi Marketplace</span>
-        <span>⚡ Drag & Drop Builder</span>
-        <span>🎨 2,000+ Layouts</span>
         <span>🤖 AI-Powered Design</span>
         <span>♾️ Unlimited Sites</span>
         <span>🛒 WooCommerce Ready</span>
+        <span>☁️ Divi Cloud Storage</span>
+        <span>🛡️ 30-Day Guarantee</span>
+        <span>📱 Fully Responsive</span>
+        <span>⭐ Premium Support 24/7</span>
+        <span>🛍️ Divi Marketplace</span>
         <!-- same items again so the loop looks seamless -->
-        <span>🛟 Premium Support 24/7</span>
-        <span>🛍️ Divi Marketplace</span>
-        <span>⚡ Drag & Drop Builder</span>
-        <span>🎨 2,000+ Layouts</span>
         <span>🤖 AI-Powered Design</span>
         <span>♾️ Unlimited Sites</span>
         <span>🛒 WooCommerce Ready</span>
+        <span>☁️ Divi Cloud Storage</span>
+        <span>🛡️ 30-Day Guarantee</span>
+        <span>📱 Fully Responsive</span>
+        <span>⭐ Premium Support 24/7</span>
+        <span>🛍️ Divi Marketplace</span>
       </div>
     </div>
 
@@ -122,8 +144,9 @@
           <div class="icon">⚡</div>
           <h3>Live Visual Builder</h3>
           <p>
-            Build right on the page and watch every change happen instantly,
-            with no back-end panels to fight with.
+            Design directly on your page in real time. Every click, drag, and
+            customization is instantly visible. No coding, no confusing back-end
+            panels.
           </p>
           <span class="link">↗ Frontend Editing</span>
         </div>
@@ -132,8 +155,9 @@
           <div class="icon">🎨</div>
           <h3>2,000+ Premium Layouts</h3>
           <p>
-            Browse ready-made layout packs sorted by industry, import one in a
-            click and make it yours.
+            Access thousands of professionally-designed layout packs organized
+            by industry. Import any layout to any page with one click and
+            customize freely.
           </p>
           <span class="link">↗ Quick Sites Included</span>
         </div>
@@ -142,18 +166,20 @@
           <div class="icon">🤖</div>
           <h3>Divi AI — Native Integration</h3>
           <p>
-            Create pages, copy, images and custom CSS with AI that lives inside
-            the builder itself.
+            Generate entire pages, write content, create images, and even
+            produce custom CSS — all with AI built directly into the Divi
+            Builder interface.
           </p>
           <span class="link">↗ Divi AI Add-on</span>
         </div>
 
         <div class="card">
-          <div class="icon">🧩</div>
+          <div class="icon">🏗️</div>
           <h3>Theme Builder</h3>
           <p>
-            Design headers, footers, post templates and archive pages visually,
-            for a fully custom site.
+            Design your entire website — headers, footers, single post
+            templates, archive pages, and more — visually. Full site editing
+            made intuitive.
           </p>
           <span class="link">↗ Full Site Editing</span>
         </div>
@@ -162,8 +188,9 @@
           <div class="icon">🛒</div>
           <h3>WooCommerce Support</h3>
           <p>
-            Style product pages, carts and checkouts with built-in store modules
-            and no developer needed.
+            Build beautiful ecommerce stores with Divi's native WooCommerce
+            modules. Design product pages, carts, checkouts — all visually, no
+            dev needed.
           </p>
           <span class="link">↗ Sell Anything</span>
         </div>
@@ -172,8 +199,9 @@
           <div class="icon">☁️</div>
           <h3>Divi Cloud & Teams</h3>
           <p>
-            Keep layouts, templates and snippets in the cloud and share them
-            across sites and teammates.
+            Store your layouts, templates, and code snippets in the cloud. Share
+            assets across all your websites and collaborate with your team
+            instantly.
           </p>
           <span class="link">↗ Agency Ready</span>
         </div>
@@ -182,8 +210,8 @@
           <div class="icon">📱</div>
           <h3>Responsive Design Control</h3>
           <p>
-            Fine-tune each element separately for desktop, tablet and mobile so
-            it looks right everywhere.
+            Customize every element separately for desktop, tablet, and mobile.
+            Your website will look perfect on any device, automatically.
           </p>
           <span class="link">↗ Mobile First</span>
         </div>
@@ -192,8 +220,9 @@
           <div class="icon">🎯</div>
           <h3>Marketing & Leads</h3>
           <p>
-            Add email opt-in forms and social sharing tools to turn visitors
-            into subscribers.
+            Use Bloom for beautiful email opt-in forms and Monarch for social
+            sharing. Convert visitors into subscribers and grow your audience
+            with built-in tools.
           </p>
           <span class="link">↗ Bloom + Monarch</span>
         </div>
@@ -202,8 +231,9 @@
           <div class="icon">⚙️</div>
           <h3>Divi Dash — Site Manager</h3>
           <p>
-            Run all your WordPress sites from one dashboard, including updates
-            for plugins and themes.
+            Manage all your WordPress websites from one dashboard. Update
+            plugins, themes, and content across unlimited sites without ever
+            switching tabs.
           </p>
           <span class="link">↗ Manage All Sites</span>
         </div>
@@ -224,20 +254,22 @@
         <p class="label">REAL-TIME DESIGN</p>
         <h2>See Exactly What You're <em>Building.</em></h2>
         <p class="intro">
-          The front-end visual editor lets you design directly on the page. No
-          more switching back and forth between preview and editor.
+          Divi's front-end visual editor lets you design directly on the page.
+          No more switching back and forth between preview and editor.
         </p>
 
         <ul class="checklist">
           <li>Point-and-click editing directly on the live page</li>
-          <li>Drag & drop any module anywhere, no restrictions</li>
-          <li>Inline text editing: click text to change it instantly</li>
+          <li>Drag & drop any module anywhere — no restrictions</li>
+          <li>Inline text editing — click text to change it instantly</li>
           <li>Undo/redo history with up to 200 revision snapshots</li>
-          <li>Global colors & fonts: change once, update everywhere</li>
+          <li>Global colors & fonts — change once, update everywhere</li>
           <li>Copy & paste styles between any page elements</li>
         </ul>
 
-        <a class="btn btn-gold btn-big" href="#trial">Try the Builder Free →</a>
+        <a class="btn btn-gold btn-big" href="#trial"
+          >Try Divi Builder Free →</a
+        >
       </div>
     </section>
 
@@ -251,8 +283,9 @@
 
         <div>
           <p class="intro">
-            A growing ecosystem of premium add-ons, child themes, layout packs
-            and modules, all built for Divi by independent developers.
+            The Divi Marketplace is a growing ecosystem of premium add-ons,
+            child themes, layout packs, and modules — all built specifically for
+            Divi by top developers worldwide.
           </p>
           <a class="btn btn-outline" href="#marketplace"
             >Browse Marketplace →</a
@@ -267,8 +300,8 @@
             <span class="category">EXTENSIONS & MODULES</span>
             <h3>Premium Divi Modules</h3>
             <p>
-              Sliders, mega menus, popups, forms, countdown timers and many more
-              modules for your pages.
+              Advanced sliders, mega menus, popups, custom forms, countdown
+              timers, and 100s more powerful modules for your Divi pages.
             </p>
             <div class="market-bottom">
               <span class="stars">★★★★★</span>
@@ -283,8 +316,9 @@
             <span class="category">CHILD THEMES</span>
             <h3>Divi Child Themes</h3>
             <p>
-              Ready-made child themes for any niche, from portfolios and
-              agencies to restaurants. Import and go live.
+              Beautiful ready-made Divi child themes for any niche — portfolios,
+              agencies, restaurants, coaches, and more. Import and go live
+              instantly.
             </p>
             <div class="market-bottom">
               <span class="stars">★★★★★</span>
@@ -299,8 +333,9 @@
             <span class="category">LAYOUT PACKS</span>
             <h3>Premium Layout Packs</h3>
             <p>
-              Full website packs with matching pages: home, about, contact,
-              services and blog. Just import and customize.
+              Full website layout packs with multiple pages — home, about,
+              contact, services, blog — all matching in style. Just import and
+              customize.
             </p>
             <div class="market-bottom">
               <span class="stars">★★★★★</span>
@@ -329,8 +364,8 @@
           <div class="icon">🏗️</div>
           <h3>Divi Theme & Builder</h3>
           <p>
-            The flagship WordPress theme with a visual page builder. Unlimited
-            sites, 2,000+ layouts and full site editing.
+            The #1 WordPress theme and visual page builder. Unlimited sites,
+            2000+ layouts, full site editing.
           </p>
         </div>
 
@@ -338,8 +373,8 @@
           <div class="icon">📰</div>
           <h3>Extra Theme</h3>
           <p>
-            A magazine-style theme for bloggers and publishers, with category
-            layouts and a built-in review system.
+            The ultimate magazine theme for bloggers and online publications.
+            Category-based layouts and review system.
           </p>
         </div>
 
@@ -347,8 +382,8 @@
           <div class="icon">✉️</div>
           <h3>Bloom — Email Opt-Ins</h3>
           <p>
-            High-converting email opt-in forms with multiple display types,
-            ready templates and email service integrations.
+            Beautiful, highly-converting email opt-in forms. 6 display types,
+            100+ templates, 19+ email integrations.
           </p>
         </div>
 
@@ -356,8 +391,8 @@
           <div class="icon">📣</div>
           <h3>Monarch — Social Sharing</h3>
           <p>
-            A clean social sharing plugin with many networks, flexible placement
-            options and built-in analytics.
+            The most elegant social sharing plugin for WordPress. 35+ networks,
+            multiple placement options, analytics.
           </p>
         </div>
       </div>
